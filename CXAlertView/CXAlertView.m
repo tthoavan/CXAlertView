@@ -778,7 +778,7 @@ static BOOL __cx_statsu_prefersStatusBarHidden;
                          _blurView.transform = CGAffineTransformMakeScale(1.0,1.0);
                      }
                      completion:^(BOOL finished) {
-                         [_blurView blur];
+                         //[_blurView blur];
                          if (completion) {
                              completion();
                          }
