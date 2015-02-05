@@ -1,12 +1,15 @@
-Pod::Spec.new do |spec|
-spec.name             = 'CXAlertView'
-spec.version          = '1.1.0'
-spec.license          =  :type => 'MIT'
-spec.homepage         = 'https://github.com/ChrisXu1221/CXAlertView'
-spec.authors          = 'tthoavan' => 'tthoavan@gmail.com'
-spec.summary          = 'AlertView custom'
-spec.source           =  :git => 'https://github.com/tthoavan/CXAlertView.git'
-spec.source_files     = 'CXAlertView/*.h,m'
-spec.framework        = 'SystemConfiguration'
-spec.requires_arc     = true
+Pod::Spec.new do |s|
+s.name = 'CXAlertView'
+s.version = '1.1.0'
+s.license = 'MIT'
+s.summary = 'The open source custom UIAlertView for iOS.'
+s.homepage = 'https://github.com/ChrisXu1221/CXAlertView'
+s.authors = { "tthoavan" => "tthoavan@gmail.com" }
+s.source = { :git => 'https://github.com/vfr/Reader.git', :tag => "v#{s.version}" }
+s.platform = :ios
+s.ios.deployment_target = '6.0'
+s.source_files = 'CXAlertView/*.{h,m}'
+s.resources = :git => 'https://github.com/tthoavan/CXAlertView.git'
+s.frameworks = 'UIKit', 'Foundation', 'CoreGraphics', 'QuartzCore'
+s.requires_arc = true
 end
